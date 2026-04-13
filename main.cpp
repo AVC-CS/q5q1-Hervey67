@@ -3,21 +3,26 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int n, m;
     char letter;
     // TODO: ask user for input
     cin >> n;
+    letter = 65;
+    m = letter;
     
 
+    
     // TODO: outer loop for each row
     for (int i = 0; i <= n - 1; i++){
-        letter = 65;
         for (int j = n - 1 - i; j <= n -1; j++){
-            
-                letter = 65 + 1;
-            
-            cout << letter << " ";
+        
+            cout << letter << " "; 
+            for (int k=0; k<=n; k++){
+                letter = m + 1;
+            }
+    
         }
+
         cout << endl; 
     }
 
